@@ -7,9 +7,10 @@ import 'firebase/compat/auth';
 import 'firebase/compat/analytics';
 import {useAuthState} from 'react-firebase-hooks/auth';
 import {useCollectionData} from 'react-firebase-hooks/firestore';
+const APIKey=process.env.REACT_APP_API_KEY;
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDHFZjskWvB8CoUVo9A4FDt3uJDKEvq7CA",
+  apiKey: APIKey,
   authDomain: "superchat-14688.firebaseapp.com",
   projectId: "superchat-14688",
   storageBucket: "superchat-14688.appspot.com",
